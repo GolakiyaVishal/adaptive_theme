@@ -22,8 +22,8 @@ class SampleItemListView extends StatelessWidget {
     final result = ItemTileThemeData.fallback(context);
     if (media.size.width > 420) {
       result.copyWith(
-        titleStyle: theme.textTheme.headline5,
-        captionStyle: theme.textTheme.bodyText1,
+        titleStyle: theme.textTheme.headlineSmall,
+        captionStyle: theme.textTheme.bodyMedium,
         imageSize: 84,
       );
     }

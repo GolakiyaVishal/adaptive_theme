@@ -1,0 +1,6 @@
+{
+    "appTitle": "Adaptive Theme",
+    "@appTitle": {
+        "description": "The title of the application"
+    }
+} 

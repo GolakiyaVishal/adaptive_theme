@@ -35,8 +35,8 @@ abstract class ItemTileThemeData {
 
   factory ItemTileThemeData.fallback(BuildContext context) {
     return ItemTileThemeDataImpl(
-        titleStyle: Theme.of(context).textTheme.headline6,
-        captionStyle: Theme.of(context).textTheme.caption,
+        titleStyle: Theme.of(context).textTheme.titleLarge,
+        captionStyle: Theme.of(context).textTheme.bodySmall,
         imageSize: 64);
   }
 }
