@@ -39,8 +39,8 @@ class _CustomSwitchState extends State<CustomSwitch>
 
   @override
   Widget build(BuildContext context) {
-    final width = 40.0;
-    final height = 48.0;
+    const width = 40.0;
+    const height = 48.0;
     return AnimatedBuilder(
       animation: _animationController!,
       builder: (context, child) {
@@ -76,7 +76,7 @@ class _CustomSwitchState extends State<CustomSwitch>
                     alignment: _circleAnimation!.value,
                     // widget.value ? Alignment.centerRight : Alignment.centerLeft,
                     child: Container(
-                      width: (width - 6)/2,
+                      width: (width - 6) / 2,
                       height: height - 6,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(4.0),
@@ -87,10 +87,13 @@ class _CustomSwitchState extends State<CustomSwitch>
                 ),
               ),
               const SizedBox(width: 12),
-              Text(widget.label, style: TextStyle(color:
-              _circleAnimation!.value == Alignment.centerLeft
-                  ? const Color(0x60242424)
-                  : const Color(0xff128f79)),)
+              Text(
+                widget.label,
+                style: TextStyle(
+                    color: _circleAnimation!.value == Alignment.centerLeft
+                        ? const Color(0x60242424)
+                        : const Color(0xff128f79)),
+              )
             ],
           ),
         );
